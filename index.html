@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id='title'>Gym Sign Up Form</h1>
+    <p id='description'>Sign up for the school gym!</p>
+    <hr>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label' for='name'>Name<input class='block' id='name' placeholder='James Smith' type='text' required>
+        <label id='email-label' for='email'>Email<input class='block' id='email' type='email' placeholder='abc@gmai.com' required>
+        <label id='number-label' for='number'>Age<input class='block' placeholder='17' id='number' type='number' min='14' max='120' required></label>
+        <label for='dropdown' >Which form do you study in?
+          <select class='block' id='dropdown'>
+            <option>F.1</option>
+            <option>F.2</option>
+            <option>F.3</option>
+            <option>F.4</option>
+            <option>F.5</option>
+            <option>F.6</option>
+          </select>
+        </label>
+      </fieldset>
+      <hr>
+      <fieldset class='mc'>
+        <legend>How much prior physical experience do you have?</legend>
+        <label class='scale' for='active'>
+          <input value='active' class='left'id='active' name='exp' type='radio'>Active
+        </label>
+        <label class='scale'>
+          <input value='moderate'id='moderate'type='radio' class='left' name='exp'>Moderate
+        </label>
+        <label class='scale'>
+          <input id='low' value='low' class='left' type='radio' name='exp'>Low
+        </label>
+      </fieldset>
+      <hr>
+      <fieldset class='mc'>
+        <legend>What is your favourite exercise?</legend>
+<label for='upper-body'><input type='checkbox' id='upper-body' value='upper body'>Upper Body</label>
+<label for='lower-body'><input type='checkbox' id='lower-body'value='lower body'>Lower Body</label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label for='description' >Description of your goal<textarea class='block' id='description' ></textarea></label>
+      </fieldset>
+      <input id='submit' type='Submit' Value='Submit'>
+    </form>
+
+  </body>
+</html>
